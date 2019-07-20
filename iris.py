@@ -4,8 +4,8 @@
 import pandas as pd
 
 dataset = pd.read_csv('iris.csv')
-X = dataset.iloc[:, :-1]
-Y = dataset.iloc[:, -1]
+X = dataset.iloc[:, :-1].values
+Y = dataset.iloc[:, -1].values
 
 from sklearn.preprocessing import LabelEncoder
 
